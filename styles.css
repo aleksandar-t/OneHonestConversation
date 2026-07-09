@@ -412,7 +412,7 @@ h1 {
 .author__grid,
 .readers__grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(22rem, 0.82fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: clamp(2.5rem, 6vw, 5.5rem);
   align-items: center;
 }
@@ -455,11 +455,11 @@ h2 {
 
 .book-object {
   justify-self: center;
-  margin-top: 2.45rem;
+  margin-top: 0;
 }
 
 .book-object img {
-  width: min(100%, 28rem);
+  width: min(100%, 34rem);
   margin-inline: auto;
   border: 1px solid rgba(244, 240, 233, 0.28);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.76);
@@ -611,15 +611,21 @@ blockquote::after {
   align-self: flex-start;
 }
 
-.author__grid {
-  grid-template-columns: minmax(17rem, 28rem) minmax(0, 1fr);
-}
-
 .author-photo {
   width: min(100%, 28rem);
+  justify-self: center;
   border: 1px solid var(--line);
   border-radius: 2px;
   background: var(--smoke);
+}
+
+.author__grid .author-photo {
+  order: 2;
+}
+
+.author__grid > div {
+  width: 100%;
+  order: 1;
 }
 
 .author-photo img {
