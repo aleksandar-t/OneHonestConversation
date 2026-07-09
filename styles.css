@@ -793,13 +793,28 @@ blockquote::after {
     padding: 4.5rem 0;
   }
 
+  h2 {
+    max-width: 14ch;
+    font-size: clamp(1.95rem, 9.4vw, 2.65rem);
+    line-height: 1.05;
+  }
+
+  .movements h2,
+  .editions h2,
+  .final-cta h2 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
   .quote-section {
     min-height: 58vh;
     padding: 5rem 1rem;
   }
 
   blockquote {
-    font-size: clamp(1.9rem, 9vw, 2.85rem);
+    max-width: 18ch;
+    font-size: clamp(1.42rem, 6.7vw, 2rem);
+    line-height: 1.12;
+    text-wrap: wrap;
   }
 
   .tag-list li {
