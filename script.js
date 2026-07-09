@@ -12,7 +12,7 @@ const SITE_CONFIG = {
     digital: {
       label: "Kindle eBook",
       price: "$8.99",
-      url: "PLACEHOLDER_AMAZON_KINDLE_LINK"
+      url: "https://www.amazon.com/dp/B0H874VSVF"
     },
     paperback: {
       label: "Paperback",
