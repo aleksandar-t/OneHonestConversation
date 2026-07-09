@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="One Honest Conversation">
+  <rect width="64" height="64" rx="12" fill="#050505"/>
+  <circle cx="31" cy="34" r="18" fill="none" stroke="#f4f0e9" stroke-width="7"/>
+  <circle cx="46" cy="17" r="3.4" fill="#f4f0e9"/>
+  <path d="M46 9v16M38 17h16M40.3 11.3l11.4 11.4M51.7 11.3 40.3 22.7" stroke="#f4f0e9" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+</svg>
