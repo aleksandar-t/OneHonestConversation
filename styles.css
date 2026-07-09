@@ -280,9 +280,10 @@ h1 {
 }
 
 .cta-row--options {
-  max-width: 56rem;
-  align-items: stretch;
-  gap: 0.9rem;
+  display: grid;
+  max-width: 58rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
 }
 
 .button {
@@ -363,24 +364,20 @@ h1 {
 
 .purchase-option {
   display: grid;
-  flex: 1 1 13.5rem;
-  min-height: 7.8rem;
-  align-content: end;
-  align-items: end;
-  justify-content: stretch;
+  min-height: 4.8rem;
+  align-items: center;
   grid-template-columns: auto minmax(0, 1fr);
   grid-template-rows: auto auto;
-  gap: 0.25rem 0.78rem;
-  padding: 1.05rem 1.15rem;
+  gap: 0.22rem 0.8rem;
+  padding: 0.95rem 1rem;
   background:
-    linear-gradient(180deg, rgba(244, 240, 233, 0.055), rgba(166, 143, 104, 0.12)),
-    rgba(3, 3, 3, 0.28);
+    linear-gradient(90deg, rgba(244, 240, 233, 0.07), rgba(166, 143, 104, 0.12)),
+    rgba(3, 3, 3, 0.42);
 }
 
 .purchase-option::before {
   grid-row: 1 / span 2;
-  align-self: end;
-  margin-bottom: 0.12rem;
+  align-self: center;
 }
 
 .button__text,
@@ -391,12 +388,12 @@ h1 {
 
 .button__text {
   color: var(--ink);
-  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
 .button__meta {
   color: rgba(244, 240, 233, 0.68);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 750;
   letter-spacing: 0.1em;
 }
@@ -831,8 +828,25 @@ blockquote::after {
     grid-template-columns: 1fr;
   }
 
+  .cta-row--options {
+    gap: 0.65rem;
+  }
+
   .button {
     width: 100%;
+  }
+
+  .purchase-option {
+    min-height: 4.35rem;
+    padding: 0.82rem 0.9rem;
+  }
+
+  .button__text {
+    font-size: 0.9rem;
+  }
+
+  .button__meta {
+    font-size: 0.64rem;
   }
 
   .section__inner {
