@@ -1,5 +1,5 @@
 const SITE_CONFIG = {
-  canonicalUrl: "https://aleksandar-t.github.io/OneHonestConversation/",
+  canonicalUrl: "https://onehonestconversation.com/",
   title: "One Honest Conversation",
   subtitle: "A Journey Through Curiosity, Relationship and Experience",
   author: "Aleksandar Tomovski",

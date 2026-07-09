@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aleksandar-t.github.io/OneHonestConversation/sitemap.xml
+Sitemap: https://onehonestconversation.com/sitemap.xml
