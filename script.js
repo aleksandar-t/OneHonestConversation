@@ -17,12 +17,12 @@ const SITE_CONFIG = {
     paperback: {
       label: "Paperback",
       price: "$22.99",
-      url: "https://www.amazon.com/dp/B0H854WQY2/ref=monarch_sidesheet_title"
+      url: "https://www.amazon.com/dp/B0H854WQY2"
     },
     hardcover: {
       label: "Hardcover",
       price: "$34.99",
-      url: "https://www.amazon.com/dp/B0H85GK9NF/ref=monarch_sidesheet_title"
+      url: "https://www.amazon.com/dp/B0H85GK9NF"
     }
   }
 };
@@ -71,6 +71,7 @@ function applyConfiguredImages() {
 }
 
 function addStructuredData() {
+  const absoluteUrl = (path) => new URL(path, SITE_CONFIG.canonicalUrl).href;
   const offers = Object.values(SITE_CONFIG.editions)
     .filter((edition) => edition.url.startsWith("http"))
     .map((edition) => ({
@@ -86,12 +87,13 @@ function addStructuredData() {
     "@type": "Book",
     name: SITE_CONFIG.title,
     alternateName: SITE_CONFIG.subtitle,
+    inLanguage: "en",
     author: {
       "@type": "Person",
       name: SITE_CONFIG.author
     },
     bookFormat: ["EBook", "Paperback", "Hardcover"],
-    image: SITE_CONFIG.images.cover,
+    image: absoluteUrl(SITE_CONFIG.images.cover),
     url: SITE_CONFIG.canonicalUrl,
     description:
       "A philosophical dialogue about consciousness, perception, art, AI, relationships, and the quiet space where meaning appears.",
