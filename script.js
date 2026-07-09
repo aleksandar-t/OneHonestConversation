@@ -4,15 +4,15 @@ const SITE_CONFIG = {
   subtitle: "A Journey Through Curiosity, Relationship and Experience",
   author: "Aleksandar Tomovski",
   images: {
-    cover: "assets/the%20third%20mind%20gumroad%20front.jpg",
+    cover: "assets/one-honest-conversation-front.jpg",
     wide: "assets/the%20third%20mind%20clean.jpg",
     author: "assets/selfportrait.jpg"
   },
   editions: {
     digital: {
-      label: "Digital PDF",
+      label: "Kindle eBook",
       price: "$9.99",
-      url: "https://tomovision.gumroad.com/l/one-honest-conversation"
+      url: "PLACEHOLDER_AMAZON_KINDLE_LINK"
     },
     paperback: {
       label: "Paperback",
@@ -41,9 +41,10 @@ function applyConfiguredLinks() {
       link.target = "_blank";
       link.rel = "noopener noreferrer";
     } else {
+      link.href = "#editions";
       link.removeAttribute("target");
       link.setAttribute("aria-disabled", "true");
-      link.title = "Replace this placeholder link in script.js";
+      link.title = "Kindle eBook link coming soon";
       link.classList.add("button--disabled");
       link.addEventListener("click", (event) => event.preventDefault());
     }
