@@ -17,12 +17,12 @@ const SITE_CONFIG = {
     paperback: {
       label: "Paperback",
       price: "$22.99",
-      url: "PLACEHOLDER_AMAZON_PAPERBACK_LINK"
+      url: "https://www.amazon.com/dp/B0H854WQY2/ref=monarch_sidesheet_title"
     },
     hardcover: {
       label: "Hardcover",
       price: "$34.99",
-      url: "PLACEHOLDER_AMAZON_HARDCOVER_LINK"
+      url: "https://www.amazon.com/dp/B0H85GK9NF/ref=monarch_sidesheet_title"
     }
   }
 };
