@@ -829,7 +829,12 @@ blockquote::after {
   }
 
   .cta-row--options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.65rem;
+  }
+
+  .purchase-option[data-buy-link="digital"] {
+    grid-column: 1 / -1;
   }
 
   .button {
@@ -841,12 +846,31 @@ blockquote::after {
     padding: 0.82rem 0.9rem;
   }
 
+  .purchase-option[data-buy-link="paperback"],
+  .purchase-option[data-buy-link="hardcover"] {
+    min-height: 4rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.18rem 0.55rem;
+    padding: 0.72rem 0.68rem;
+  }
+
   .button__text {
     font-size: 0.9rem;
   }
 
   .button__meta {
     font-size: 0.64rem;
+  }
+
+  .purchase-option[data-buy-link="paperback"] .button__text,
+  .purchase-option[data-buy-link="hardcover"] .button__text {
+    font-size: 0.76rem;
+  }
+
+  .purchase-option[data-buy-link="paperback"] .button__meta,
+  .purchase-option[data-buy-link="hardcover"] .button__meta {
+    font-size: 0.56rem;
+    letter-spacing: 0.07em;
   }
 
   .section__inner {
