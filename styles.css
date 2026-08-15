@@ -689,6 +689,21 @@ blockquote::after {
   text-align: center;
 }
 
+.site-footer p + p {
+  margin-top: 0.35rem;
+}
+
+.site-footer a {
+  color: var(--ink);
+  text-decoration-color: rgba(244, 240, 233, 0.35);
+  text-underline-offset: 0.18em;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  text-decoration-color: var(--ink);
+}
+
 .to-top {
   position: fixed;
   right: 1.1rem;
