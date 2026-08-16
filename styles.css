@@ -362,6 +362,65 @@ h1 {
   transform: none;
 }
 
+.giveaway-callout {
+  display: grid;
+  max-width: 58rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 0.9rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(215, 199, 166, 0.36);
+  background:
+    linear-gradient(90deg, rgba(112, 94, 64, 0.2), rgba(244, 240, 233, 0.045)),
+    rgba(3, 3, 3, 0.48);
+}
+
+.giveaway-callout__eyebrow,
+.giveaway-callout__meta {
+  color: var(--soft);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.giveaway-callout__title {
+  margin-top: 0.2rem;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.15;
+}
+
+.giveaway-callout__meta {
+  margin-top: 0.35rem;
+  letter-spacing: 0.08em;
+}
+
+.giveaway-callout__link {
+  display: inline-flex;
+  min-height: 2.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 0.95rem;
+  border: 1px solid rgba(215, 199, 166, 0.55);
+  color: #f2eadb;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.giveaway-callout__link:hover,
+.giveaway-callout__link:focus-visible {
+  border-color: rgba(232, 217, 184, 0.82);
+  background: rgba(188, 164, 122, 0.2);
+  transform: translateY(-1px);
+}
+
 .purchase-option {
   display: grid;
   min-height: 4.8rem;
@@ -917,6 +976,15 @@ blockquote::after {
   .purchase-option[data-buy-link="hardcover"] .button__meta {
     font-size: 0.56rem;
     letter-spacing: 0.07em;
+  }
+
+  .giveaway-callout {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .giveaway-callout__link {
+    width: 100%;
   }
 
   .section__inner {
